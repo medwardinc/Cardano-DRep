@@ -1,0 +1,75 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": "CIP119:image",
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": "blake2b-256",
+  "body": {
+    "doNotList": false,
+    "givenName": "CapeCrypto",
+    "motivations": " I want to reperesent the everday investor in cardano, not the whales or stake pool operators, but the single parents and students that dont have time to research proposals. ",
+    "objectives": "I truly believe in Cardano and the technology behind the project.  With something you truly believe in, having a say is paramount in making you feel part of the project as a whole.  My objective to keep Cardano on this path and make sure it does not stray away from its main goals of decentralization and freedom from being under uncontrollable governmental power.",
+    "paymentAddress": "addr1qyxgcaxpv244y5xpjn2f2ewpslwn523drhdjs3dywf2cx49gvkynt0f5vwya00d2d0jfu2edg0wtmfjr2evjkq5k4h3qyhk8m0",
+    "qualifications": "I was the Financial Liaison for Patient Access at a rehabilitation facility for 8 years in the insurance and tradfi sector. I have been heavily investing and a part of the Cardano community since 2021",
+    "references": [
+      {
+        "@type": "Link",
+        "label": "X page for Cape Crypto",
+        "uri": "https://x.com/CapeCrypto11"
+      },
+      {
+        "@type": "Identity",
+        "label": "Github",
+        "uri": "https://raw.githubusercontent.com/medwardinc/Cardano-DRep/main/eternl-moneytruck-xpub1au848jmv3sn-mm.json"
+      }
+    ]
+  }
+}
